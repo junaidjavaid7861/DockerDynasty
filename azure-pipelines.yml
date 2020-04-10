@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'junaidjavaid/test-microservice'
+  vmImage: 'ubuntu-latest'
 
 steps:
 - script: echo Hello, world!
