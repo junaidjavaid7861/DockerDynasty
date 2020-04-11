@@ -19,7 +19,7 @@ tasks = [
 
 @app.route('/')
 def hello_world():
-    return 'Flask Dockerized new image'
+    return 'Flask Dockerized new image1'
 
 @app.route('/tasks', methods=['GET'])
 def get_tasks():
