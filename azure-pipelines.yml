@@ -6,8 +6,12 @@
 trigger:
 - master
 
-pool:
-  vmImage: 'ubuntu-latest'
+resources:
+  containers:
+  - container: Microservice
+    type: ACR
+    registry: myDockerRegistry
+    image: junaidjavaid/test-microservice
 
 steps:
 - script: echo Hello, world!
